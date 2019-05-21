@@ -9,7 +9,8 @@ This repository contains code for a pre-configured Docker container to build and
    |--- test
    ```
    Where the `terraform` directory contains the Terraform code and the `test` directory contains the Terratest Go code to test the Terraform.
-2. When utilizing the AWS Terraform provider, `credentials` and `config` files should be located in the `~/.aws` directory. These will be passed to the Docker container in the run command below.
+1. The main test function (in a `.go` file in the `test` directory is named `TestTerraform`.
+1. When utilizing the AWS Terraform provider, `credentials` and `config` files should be located in the `~/.aws` directory. These will be passed to the Docker container in the run command below.
 
 # How to use docker-terraform-test
 1. Install docker locally.
